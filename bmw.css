@@ -1,0 +1,140 @@
+*{ margin: 0;
+    padding: 0;
+    font-family: "Rajdhani" , sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header{
+min-height: 100vh;
+width: 100%;
+background-image: url("./bmw.css");
+background-position: center;
+background-size: cover;
+position: relative;
+}
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space between;
+align-items: center;}
+.navs{
+flex: 1;
+text-align: right;}
+.navs ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+naves ul li a{
+text-decoration: none;
+color: rgb(39, 48, 226);
+font-size: 20px;
+}
+navs ul li::after{
+content:'';
+width: 0;
+height: 2px;
+background: rgb(12, 17, 98);
+display: block;
+margin: auto; 
+transition: 0.5s;
+}
+navs ul li:hover::after{
+width: 100%;
+}
+#w{
+   text-align: center; 
+   width: auto;
+   text-indent: -350px;
+   font-weight: bold;
+   color: blanchedalmond;
+
+}
+maintext{
+
+top: 50%;
+left: 50%; 
+transform: translate(-50%,-50%);
+color: black;
+text-align: center;
+}
+.maintext h1{
+    text-align: center; 
+    width: auto;
+    text-indent: -100px;
+    font-weight: bold;
+    color: orangered;
+    
+}
+.maintext p{
+    width: 100%;
+    color:orangered;
+    text-align: center;
+    padding: 8px 12px;
+    margin:8px 12px ;
+    font-weight: 700;
+}
+.btn{
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    font-size:large ;
+    font-family: "Rajdhani" , sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: orangered;
+    border: 4px solid white;
+    margin: 10px;
+    padding: 10px;
+}
+.btn:hover{
+border: 1px solid Irgb(57, 193,227);
+background-color: rgb(29, 26,92);
+transition: 1s;
+ }
+footer {
+background-color: rgb(29, 26, 92);
+color: burlywood;
+text-align: center;
+padding: 10px 0;
+}
+nav .fa-solid{
+display: none;
+}
+@media(max-width:700px){
+.maintext h1{
+font-size: 20px;
+}
+.navs ul li{
+display: block;
+}
+.navs{
+position: absolute;
+background: rgb(125,125,163);
+top:0;
+right: 200px;
+height: 100vh;
+width: 200px;
+text-align: left;
+z-index: 2;
+transition: 1s;
+}
+.navs ul{
+padding: 40px;
+}
+nav .fa-solid{
+display: block;
+color: bisque ;
+font-size: 20px;
+cursor: pointer;
+margin: 10px;
+}
+#w{
+    display: none;
+}

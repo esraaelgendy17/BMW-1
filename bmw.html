@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="./Assets/styles/bmw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="logo.jpg" width="200px" height="100px"></a>
+            <div class="navs" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="HideMenu()"></i>
+                <p id="w">Welcome To Our Website</p> 
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Our product</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <div class="maintext">
+            <h1>Bayerische Motoren Werke</h1><br><br><br><br><br><br>
+            <p >BMW is known for its luxury, performance, and innovation.</p>
+            <a href="#" class="btn">Click here to know more</a>
+        </div>
+    </header>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function ShowMenu() {
+            navlinks.style.right = "0";
+        }
+        function HideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+    <footer>
+        <p>© 2024 BMW. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
